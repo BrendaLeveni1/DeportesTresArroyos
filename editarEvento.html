@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Direccion de Deportes de Tres Arroyos</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+        .card {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+            <h1 class="logo me-auto">
+                <a href=""><img src="assets/img/logo.jpg" alt="Parque Industrial" id="logo"></a>
+            </h1>
+            <!-- <h1 class="logo me-auto"><a href="<?php echo(base_url());  ?>/">Parque Industrial<span>.</span></a></h1> -->
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="index.html#inicio">Inicio</a></li>
+                    <li><a class="nav-link scrollto" href="index.html#objetivo">Objetivos</a></li>
+                    <li><a class="nav-link scrollto " href="index.html#calendario">Calendario</a></li>
+                    <!-- <li><a class="nav-link scrollto" href="editar.html">Edicion</a></li> -->
+                    <li><a class="nav-link scrollto" href="index.html#noticias">Noticias</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+
+                    <li><a class="nav-link scrollto" href="index.html#contacto">Contacto</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+
+        </div>
+
+        <style>
+            #header .logo img {
+                max-height: 7rem !important;
+                max-width: 7rem !important;
+            }
+            
+            .form-group {
+                margin: 30px 0px 50px 0px;
+            }
+        </style>
+    </header>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 mt-5">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">Editar Evento</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="#" method="POST" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="titulo">Título:</label>
+                                <input type="text" id="titulo" name="titulo" class="form-control" value="En verano siguen los deportes" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="imagen">Imagen:</label>
+                                <input type="file" id="imagen" name="imagen" class="form-control-file" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Editar Evento</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

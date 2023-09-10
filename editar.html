@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Direccion de Deportes de Tres Arroyos</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            text-align: center;
+            border: 1px solid #dddddd;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+            <h1 class="logo me-auto">
+                <a href=""><img src="assets/img/logo.jpg" alt="Parque Industrial" id="logo"></a>
+            </h1>
+            <!-- <h1 class="logo me-auto"><a href="<?php echo(base_url());  ?>/">Parque Industrial<span>.</span></a></h1> -->
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="index.html#inicio">Inicio</a></li>
+                    <li><a class="nav-link scrollto" href="index.html#objetivo">Objetivos</a></li>
+                    <li><a class="nav-link scrollto " href="index.html#calendario">Calendario</a></li>
+                    <!-- <li><a class="nav-link scrollto" href="editar.html">Edicion</a></li> -->
+                    <li><a class="nav-link scrollto" href="index.html#noticias">Noticias</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+
+                    <li><a class="nav-link scrollto" href="index.html#contacto">Contacto</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+
+        </div>
+
+        <style>
+            #header .logo img {
+                max-height: 7rem !important;
+                max-width: 7rem !important;
+            }
+            
+            .table-secondary {
+                text-align: left;
+                align-items: center;
+            }
+            
+            .nav-item {
+                border-radius: 10px;
+            }
+            
+            .add {
+                max-width: 130px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </header>
+    <!-- ======= Datos Economicos Section ======= -->
+    <section id="datos" class="datos">
+        <div class="container" data-aos="fade-up">
+            <ul class="nav nav-datos row d-flex">
+                <li class="nav-item rounded col-3">
+                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+                        <i class="bi bi-newspaper"></i>
+                        <h4 class="d-none d-lg-block">Noticias</h4>
+                    </a>
+                </li>
+                <li class="nav-item rounded col-3">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+                        <i class="bi bi-calendar3"></i>
+                        <h4 class="d-none d-lg-block">Eventos</h4>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active show" id="tab-1">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                            <a href="nuevaNoticia.html" class="btn btn-success d-flex align-items-center justify-content-center add">
+                                <i class="bi bi-plus-square-fill fs-1 me-2"></i>
+                                <span class="d-inline-block">Agregar</span>
+                            </a>
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <td class="table-secondary">NOCHE DE BOXEO</td>
+                                        <td>
+                                            <button class="btn btn-primary"><a href="editarNoticia.html" ><i class="bi bi-pencil-square edit-icon"></i></a></button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger" onclick="eliminarFila(this)"> <i class="bi bi-x-square-fill"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-secondary">CAPACITACIONES DE RCP EN TODAS LAS ÁREAS DEL MUNICIPIO</td>
+                                        <td>
+                                            <button class="btn btn-primary"><a href="editarNoticia.html" ><i class="bi bi-pencil-square edit-icon"></i></a></button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger" onclick="eliminarFila(this)"> <i class="bi bi-x-square-fill"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-secondary">REUNIÓN PARA ESTABLECER EL CALENDARIO DE PESCA DEL AÑO 2022 - 2023</td>
+                                        <td>
+                                            <button class="btn btn-primary"><a href="editarNoticia.html" ><i class="bi bi-pencil-square edit-icon"></i></a></button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger" onclick="eliminarFila(this)"> <i class="bi bi-x-square-fill"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-secondary"> TALLER RECREATIVO DE VOLEY EN EL POLIDEPORTIVO</td>
+                                        <td>
+                                            <button class="btn btn-primary"><a href="editarNoticia.html" ><i class="bi bi-pencil-square edit-icon"></i></a></button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger" onclick="eliminarFila(this)"> <i class="bi bi-x-square-fill"></i></button>
+                                        </td>
+                                    </tr>
+
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-2">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                            <a href="nuevaNoticia.html" class="btn btn-success d-flex align-items-center justify-content-center add">
+                                <i class="bi bi-plus-square-fill fs-1 me-2"></i>
+                                <span class="d-inline-block">Agregar</span>
+                            </a>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <td class="table-secondary">Evento 1</td>
+                                        <td>
+                                            <button class="btn btn-primary"><a href="editarEvento.html" ><i class="bi bi-pencil-square edit-icon"></i></a></button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger" onclick="eliminarFila(this)"> <i class="bi bi-x-square-fill"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-secondary">Evento 2</td>
+                                        <td>
+                                            <button class="btn btn-primary"><a href="editarEvento.html" ><i class="bi bi-pencil-square edit-icon"></i></a></button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger" onclick="eliminarFila(this)"> <i class="bi bi-x-square-fill"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-secondary">Evento 3</td>
+                                        <td>
+                                            <button class="btn btn-primary"><a href="editarEvento.html" ><i class="bi bi-pencil-square edit-icon"></i></a></button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger" onclick="eliminarFila(this)"> <i class="bi bi-x-square-fill"></i></button>
+                                        </td>
+                                    </tr>
+
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End datos Section -->
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <script>
+        function eliminarFila(button) {
+            var fila = button.parentNode.parentNode;
+            fila.parentNode.removeChild(fila);
+        }
+    </script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
